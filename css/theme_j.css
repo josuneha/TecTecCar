@@ -1,0 +1,76 @@
+
+#DB_Search_Results {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+#DB_Search_Results td, #DB_Search_Results th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 2px;
+}
+
+#DB_Search_Results tr:nth-child(even){background-color: #f2f2f2}
+
+#DB_Search_Results tr:hover {background-color: #ddd;}
+
+#DB_Search_Results th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #004a80;
+    color: white;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #808080;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  width: 95px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+input[type=text] {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('search_icon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+

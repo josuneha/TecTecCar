@@ -1,0 +1,63 @@
+body {
+background-color: blue;
+}
+p {
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.rides {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ride {
+  color: #222;
+  background: rgba(255,255,255,.9);
+  border-spacing: 2px;
+  border-color: gray;
+  font-family: arial,sans-serif;
+  border-bottom: 1px #e5e5e5 solid;
+}
+
+.current .item {
+  background: rgba(205,220,206,.9);
+}
+
+.item {
+  cursor: pointer;/*gives the user a feedback, that you can click iere*/
+  
+  
+}
+
+.item .name {
+  margin-left: 20px;
+}
+
+.item .location {
+  font-weight: bold;
+}
+
+.item .date {
+  margin-right: 20px;
+}
+.item .time{
+  margin-right: 20px;
+}
+.item .pubdate {
+  text-align: right;  
+}
+
+.description {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.description h1 {
+  margin-top: 0px;
+  font-size: 23px;
+}
