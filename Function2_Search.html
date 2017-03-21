@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>			 
+
+					
+	<title>  Function1</title>
+					
+			</head>
+				<style>
+				  #map {
+					width: 350px;
+					height: 200px;
+				  }
+				</style>
+				</head>
+				<body BACKGROUND=https://wallpaperscraft.com/image/highway_cars_city_traffic_buildings_black_white_25566_1920x1080.jpg >
+
+				<BR><BR>
+				<FORM ACTION=Function1_2 METHOD=GET >
+				<TABLE ALIGN=center>
+				<TD face=arial ALIGN=Center bgcolor=White> <b></b>
+				<BR>
+				<BR>
+				<H2 ALIGN=center> <FONT face=arial COLOR=black> INSERT YOUR RIDE</FONT></H2><BR>
+				<ALIGN=center> <FONT face=arial COLOR=black>Your choice:</FONT><BR>
+				
+				
+				<BR>
+				<INPUT TYPE=radio NAME=disp1 VALUE=1 onclick=onclick="myFunction()"> To Tecnun<BR>
+				<input type="radio" onclick="myFunction()">Click me2</input>
+				<p id="demo"></p>
+				<INPUT TYPE=radio NAME=disp1 VALUE=2> Way Home<BR>
+				
+				<script>
+					function myFunction() {
+					    console.debug("myfunction");
+						document.getElementById("demo").innerHTML = "Hello World";
+					}
+				</script>
+				
+				<TABLE>
+				
+
+				</form>
+
+	
+					<BR><BR>
+					<div id="map"></div>
+					<script>
+					  function initMap() {
+						var mapDiv = document.getElementById('map');
+						var map = new google.maps.Map(mapDiv, {
+						  center: {lat: 43.310, lng: -1.988},
+						  zoom: 13
+						});
+					  }
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+				<p>
+				<TABLE>
+				<p>
+						
+	
+					<TD face=arial ALIGN=center bgcolor=white> <b> Destination/Departure (*) </b> <select name="area" >
+									<OPTION NAME=area VALUE=Antiguo> Antiguo</OPTION>
+									<OPTION NAME=area VALUE=Amara>Amara</OPTION>
+									<OPTION NAME=area VALUE=Añorga>Añorga</OPTION>
+									<OPTION NAME=area VALUE=Aiete>Aiete</OPTION>
+									<OPTION NAME=area VALUE=Centro>Centro</OPTION>
+									<OPTION NAME=area VALUE=Egia>Egia</OPTION>
+									<OPTION NAME=area VALUE=Gros>Gros</OPTION>
+									<OPTION NAME=area VALUE=Hospitales>Hospitales</OPTION>
+									<OPTION NAME=area VALUE=Intxaurrondo>Intxaurrondo</OPTION>
+									<OPTION NAME=area VALUE=Martutene>Martutene</OPTION>
+									<OPTION NAME=area VALUE=ParteVieja-Boulevard>Parte Vieja - Boulevard</OPTION>
+									<OPTION NAME=area VALUE=PioBaroja>Pio Baroja</OPTION>
+									<OPTION NAME=area VALUE=RiberasDeLoyola>Riberas de Loyola</OPTION>
+									<OPTION NAME=area VALUE=Tecnun>Tecnun</OPTION>
+
+						</SELECT>			
+				<p>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white> <b> Date (*) </b><INPUT TYPE=date NAME=Date SIZE=20</TD>
+				<p>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white> <b> Departure Time (*) </b><INPUT TYPE=time NAME=DepTime SIZE=20</TD>
+				<p>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white> <b> Arriving Time (*) </b><INPUT TYPE=time NAME=ArivTime SIZE=20</TD>
+				<p>
+	
+				<TABLE>
+					<TD face=arial ALIGN=center bgcolor=white>  Price from </b><SELECT NAME=PriceFrom>
+									<OPTION NAME=PriceFrom VALUE=1>1</OPTION>
+									<OPTION NAME=PriceFrom VALUE=2>2</OPTION>
+									<OPTION NAME=PriceFrom VALUE=3>3</OPTION>
+									<OPTION NAME=PriceFrom VALUE=4>4</OPTION>
+									<OPTION NAME=PriceFrom VALUE=5>5</OPTION>
+									<OPTION NAME=PriceFrom VALUE=6>6</OPTION>
+				</SELECT>
+				
+				<TABLE>
+					<TD face=arial ALIGN=center bgcolor=white>  Price to </b><SELECT NAME=PriceTo>
+									<OPTION NAME=PriceTo VALUE=1>1</OPTION>
+									<OPTION NAME=PriceTo VALUE=2>2</OPTION>
+									<OPTION NAME=PriceTo VALUE=3>3</OPTION>
+									<OPTION NAME=PriceTo VALUE=4>4</OPTION>
+									<OPTION NAME=PriceTo VALUE=5>5</OPTION>
+									<OPTION NAME=PriceTo VALUE=6>6</OPTION>
+				</SELECT>
+								
+				<p>
+				</TABLE><BR>
+				
+				<P><B> (*) These fields must be filled </B><BR>
+				<H2 ALIGN=center><INPUT TYPE=submit VALUE=Save your ride>
+				</H2>
+                </BODY>
+                </html>

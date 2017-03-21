@@ -1,0 +1,214 @@
+import java.sql.*;
+import java.io.*;
+import java.util.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+@SuppressWarnings("serial")
+public class Agenda extends HttpServlet {
+	Connection connection;
+	
+	  public void init(ServletConfig config) throws ServletException {
+        super.init(config);
+        try {
+            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+            String url="jdbc:odbc:TecTecCar";
+            connection=DriverManager.getConnection(url); 
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+	    public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+			response.setContentType("text/html;charset=utf-8");
+			PrintWriter out = response.getWriter();
+			
+out.println("<!DOCTYPE html>");
+out.println("<html>");
+  out.println("<head>");
+  out.println("<SCRIPT type=\"text/javascript\" src=\"Registro.js\"></SCRIPT>");
+    out.println("<meta charset=\"UTF-8\">");
+    out.println("<title>Login · TecTecCar</title>");
+    
+    
+   
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"reset3.css\" />");
+    out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"main3.css\" />");
+	out.println("<link rel=\"stylesheet\" href=\"styles.css\">");
+	out.println("<link rel=\"stylesheet\" type=\"text/css\" href=\"prueb.css\" />");
+  
+  out.println("</head>");
+
+  out.println("<body>");
+	out.println("<div id=\"header\">");
+        
+        out.println("<div class=\"containers\">");
+        	
+        out.println("<h1 ><tt> | tecteccar |</tt></h1>"); 
+		
+		out.println("<h3 ><tt> Save the environment - Meet new people - Get lifted</tt></h3>");	
+		  out.println("<p><p><p>");
+			out.println("<div class=\"social-icons\">");
+				out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+				out.println("<a href=\"https://www.facebook.com/profile.php?id=100011209128997\" id=\"facebook\" title=\"Facebook\"><img src=\"facebook.png\"></a>");
+				out.println("&nbsp;&nbsp;&nbsp;");
+				out.println("<a href=\" https://www.twitter.com/tecteccar\" id=\"twitter\" title=\"Twitter\"></li><img src=\"twitter.png\" ></a>");
+				out.println("&nbsp;&nbsp;&nbsp;");
+				out.println("<a href=\" #\" id=\"google\" title=\"Google\"></li><img src=\"google.png\" ></a></p>");
+			out.println("</ul>");
+			
+		out.println("</div>");
+	
+        out.println("</div>");
+		
+    out.println("<p><p><p><p><p><p>");
+    
+		
+		
+	out.println("</div>");
+	out.println("<br><br>");
+
+out.println("<TABLE align=center width=\"900\">");
+  out.println("<tr>");
+  out.println("<td height=\"180\">");
+ out.println(" <img src=\"http://cdn.healthxspan.com/calendar-monday.png\" />");
+ out.println(" </td>");
+  out.println("<td height=\"180\">");
+  out.println("<b> Scheduled journeys for Monday, _ of _______</b>");
+ out.println(" <p><p><br>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 from Super Amara</p>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:15 estimated arrival time</p>");
+  out.println("</td>");
+  out.println("</tr>");
+  
+   out.println("<tr>");
+  out.println("<td height=\"180\">");
+ out.println("<img src=\"http://www.yourphnompenh.com/order/wp-content/blogs.dir/13/files/2014/05/calendar-tuesday.png\" />");
+  out.println(" </td>");
+  out.println("<td height=\"180\">");
+  out.println("<b> Scheduled journeys for Tuesnday, _ of _______</b>");
+   out.println(" <p><p><br>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 from Super Amara</p>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:15 estimated arrival time</p>");
+  out.println("</td>");
+  out.println("</tr>");
+ 
+   out.println("<tr>");
+  out.println("<td height=\"180\">");
+  out.println("<img src=\"http://www.yourphnompenh.com/order/wp-content/blogs.dir/13/files/2014/05/calendar-wednesday.png\" />");
+  out.println(" </td>");
+  out.println("<td height=\"180\">");
+  out.println("<b> Scheduled journeys for Tuesnday, _ of _______</b>");
+   out.println(" <p><p><br>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 from Super Amara</p>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:15 estimated arrival time</p>");
+  out.println("</td>");
+  out.println("</tr>");
+  
+ out.println("<tr>");
+  out.println("<td height=\"180\">");
+  out.println("<img src=\"http://cdn.healthxspan.com/calendar-thursday.png\" />");
+ out.println(" </td>");
+  out.println("<td height=\"180\">");
+  out.println("<b> Scheduled journeys for Tuesnday, _ of _______</b>");
+   out.println(" <p><p><br>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 from Super Amara</p>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:15 estimated arrival time</p>");
+  out.println("</td>");
+  out.println("</tr>");
+ 
+  out.println("<tr>");
+  out.println("<td height=\"180\">");
+   out.println("<img src=\"http://www.yourphnompenh.com/order/wp-content/blogs.dir/13/files/2014/05/calendar-friday.png\" />");
+ out.println(" </td>");
+  out.println("<td height=\"180\">");
+  out.println("<b> Scheduled journeys for Tuesnday, _ of _______</b>");
+   out.println(" <p><p><br>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 from Super Amara</p>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:15 estimated arrival time</p>");
+  out.println("</td>");
+  out.println("</tr>");
+  
+   out.println("<tr>");
+  out.println("<td height=\"180\">");
+  out.println("<img src=\"http://perrylocal.org/edison/files/2014/10/calendar-saturday.png\" />");
+ out.println(" </td>");
+  out.println("<td height=\"180\">");
+  out.println("<b> Scheduled journeys for Tuesnday, _ of _______</b>");
+   out.println(" <p><p><br>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 from Super Amara</p>");
+  out.println("<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:15 estimated arrival time</p>");
+  out.println("</td>");
+  out.println("</tr>");
+  out.println("</TABLE>");
+ out.println("<br><br><br>");
+  
+out.println("</div>");
+    		
+		out.println("<div id=\"footer\">");
+        
+        out.println("<div class=\"containers\">");
+                 
+			
+            out.println("<div id=\"footer_explore\" class=\"footer_info\">");
+                
+               out.println(" <h4>explore</h4>");
+                out.println("<ul>");
+                   out.println(" <li><a href=\"Index\">home</a></li>");
+                   out.println(" <li><a href=\"aboutus.html\">about us</a></li>");
+                   out.println("<li><a href=\"Help\">help</a></li>");
+                out.println("</ul>");
+                
+            out.println("</div> ");
+            
+           out.println("<div id=\"footer_browse\" class=\"footer_info\">");
+                
+               out.println(" <h4>browse</h4>");
+               out.println(" <ul>");
+                   out.println(" <li><a href=\"contact.html\">contact us</a></li>");
+                    out.println("<li><a href=\"#\">terms of service</a></li>");
+                    out.println("<li><a href=\"#\">privacy policy</a></li>");
+               out.println(" </ul>");
+                
+            out.println("</div>");
+			
+			 out.println("<div id=\"footer_explore\" class=\"footer_info\">");
+                
+               out.println(" <h4>explore</h4>");
+                out.println("<ul>");
+                   out.println(" <li><a href=\"Index\">home</a></li>");
+                   out.println(" <li><a href=\"aboutus.html\">about us</a></li>");
+                    out.println("<li><a href=\"Help\">help</a></li>");
+                out.println("</ul>");
+                
+            out.println("</div> ");
+
+        
+       out.println(" </div> ");
+        
+		out.println("</div> ");
+		
+		out.println("<div id=\"footer2\">");
+        
+       out.println("<div class=\"containers\">");
+            
+            out.println("<div id=\"footer_about2\" class\"footer_info2\">");
+                
+                out.println("<p><b>TEC-TEC-CAR</b>");
+                out.println("<br />");
+                out.println("© TecTecCar | Tecnun - Escuela de Ingenieros | P° de Manuel Lardizabal, 13. 20018 Donostia-San Sebastian | Gipuzkoa (Spain). ");"
+                out.println("<br />");
+                out.println("Phone | +34 943 21 98 77. Fax | +34 943 31 14 42.");
+				out.println("</p>");
+            out.println("</div> ");
+		
+		 out.println("</div> ");
+		out.println("</div>"); 
+
+    
+    
+ out.println(" </body>");
+out.println("</html>");
+
+	}
+	}

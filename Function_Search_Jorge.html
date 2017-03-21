@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html >
+			<head>
+				<link rel="stylesheet" type="text/css" href="theme_j.css">
+				<link rel="stylesheet" type="text/css" href="style1_j.css">
+	
+	
+			<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+			<SCRIPT type="text/javascript" src="EventoTecnun.js"></SCRIPT>
+			<SCRIPT type="text/javascript" src="EventoWayHome.js"></SCRIPT>
+			<SCRIPT type="text/javascript" src="ValidacionDatos.js"></SCRIPT>
+			<SCRIPT type="text/javascript" src="AdvancedSearch.js"></SCRIPT>
+		
+			  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+			  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+			  <link rel="stylesheet" href="/resources/demos/style.css">
+			  <script>
+			  $(function() {
+				$( "#datepicker" ).datepicker({
+				  showOn: "button",
+				  buttonImage: "folder-calendar.png",
+				  buttonImageOnly: true,
+				});
+			  });
+			  </script>
+			  
+		
+			  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+			  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+			  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+			  <link rel="stylesheet" href="/resources/demos/style.css">
+			  <script>
+			  $(function() {
+				$( "#dialog" ).dialog();
+			  });
+			  </script>
+			
+				<style>
+				  #map {
+					width: 350px;
+					height: 200px;
+				  }
+				</style>
+				
+				
+				<body >
+				
+				
+
+				<FORM ACTION=Function_Search_Jorge METHOD=get  > 
+				<div class="container">				
+					
+				<section id="content">
+				<TABLE width="60%" ALIGN=center  >
+				<TD  face=arial ALIGN=Center bgcolor=White > <b></b>
+				<BR>
+				<BR>
+				
+				<p ALIGN=center> <b> <h1 face=arial COLOR=black> SEARCH A JOURNEY</h1></b> I recommend to go from Tecnun to Antiguo the 6th of March at 10:00 to see the different options offered by the DataBase
+				
+				<br>
+				<br>
+				<br>
+				<br>		
+
+				<INPUT TYPE=radio NAME=disp1 VALUE=1 id=buttonTecnun onclick="functionTecnun()"  > <b> <font face=arial> To Tecnun
+				<INPUT TYPE=radio NAME=disp1 VALUE=2 id=buttonHome onclick="functionHome ()" > <font face=arial> Way Home </b>
+					
+					
+					<br>
+					<br>
+					<br>
+					
+					<div id="dialog" title="Help">
+					  <p>Search your destination/departure in the map</p>
+					</div>
+				
+					
+					<div id="map"></div>
+					<script>
+					  function initMap() {
+						var mapDiv = document.getElementById('map');
+						var map = new google.maps.Map(mapDiv, {
+						  center: {lat: 43.310, lng: -1.988},
+						  zoom: 13
+						});
+					  }
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+				<p>
+				
+				
+
+				
+				<TABLE>
+								
+
+							<tr>
+							<td>
+							<p face=arial ALIGN=center bgcolor=white> <b>  <font face=arial> Departure (*) <br><select name=departure id="departure" disabled=true> 
+					
+									  <option value="Antiguo" selected=selected>Antiguo</option>
+									  <option value="BentaBerri">BentaBerri</option>
+									  <option value="Centro">Centro</option>
+									  <option value="Intxaurrondo">Intxaurrondo</option>
+									  <option value="TECNUN" id="totecnun">Tecnun</option>
+							
+								</select>
+								</td>
+								&nbsp&nbsp&nbsp 
+							<td></td>
+							<td> 
+							<p face=arial ALIGN=center bgcolor=white > <b> <font face=arial> Destination (*) <br> <select name=destination id="destination"disabled=true>
+							
+									  <option value="Antiguo" selected=selected>Antiguo</option>
+									  <option value="BentaBerri">BentaBerri</option>
+									  <option value="Centro">Centro</option>
+									  <option value="Intxaurrondo">Intxaurrondo</option>
+									  <option value="TECNUN" id="fromtecnun">Tecnun</option>
+									  
+								</select>
+								</td>
+								</tr>
+							</TABLE>
+				
+				<TABLE>
+				
+				<p> <b>Date <input type="text" name=datepicker id="datepicker"></b> 
+				
+				<p><p face=arial ALIGN=center bgcolor=white id="time"> <b> <font face=arial> Arriving Time (*) </b> <br> 
+				<BR><INPUT TYPE=time NAME=time  SIZE=20</TD>
+				
+				
+	
+				</TABLE><BR>
+				
+				<table>
+					<br>
+					 <input type="checkbox" onclick="disableElements()" onclick="Price()" id="busqueda" > </input> <font face=arial	style="font-weight: normal;" > Click here for more search information: <br>
+					<br>
+					<br>  Price <select name=pricefrom id=pricefrom disabled=True >
+									
+									<option id=pricefrom value="0" >From</option>
+									<option id=pricefrom value="0" >0</option>
+									<option id=pricefrom value="1" >1</option>
+									<option id=pricefrom value="2">2</option>
+									<option id=pricefrom value="3">3</option>
+									<option id=pricefrom value="4">4</option>
+									<option id=pricefrom value="5">5</option>
+									<option id=pricefrom value="6">6</option>
+									<option id=pricefrom value="7">7</option>
+									<option id=pricefrom value="8">8</option>
+									<option id=pricefrom value="9">9</option>
+						
+			
+									
+
+								</select>
+								&nbsp&nbsp&nbsp  <select name=priceto id=priceto disabled=True >
+									
+									<option id="priceto" value="1" >To</option>
+									<option id="priceto" value="1" >1</option>
+									<option id="priceto" value="2">2</option>
+									<option id="priceto" value="3">3</option>
+									<option id="priceto" value="4">4</option>
+									<option id="priceto" value="5">5</option>
+									<option id="priceto" value="6">6</option>
+									<option id="priceto" value="7">7</option>
+									<option id="priceto" value="8">8</option>
+									<option id="priceto" value="9">9</option>
+						
+		
+
+								</select>		<br>
+
+
+					<br> Do you smoke? <select name="smoke" id="smoke" disabled=True >
+							
+							<option value="No" selected=selected>No</option>
+							<option value="Yes">Yes</option>
+					
+					</select> <br>
+		
+						</table>
+						<P><B> (*) Mandatory fields  </B><BR>
+						<H2 ALIGN=center><INPUT TYPE=button class="button" Value=Search onClick="validate()"> &nbsp&nbsp <INPUT type="reset" class="button" value="Reset">
+						</table>
+						</form>
+						</section>
+						</div>
+						<BR><BR>
+						<BR><BR>
+						
+						<BR><BR>
+						<BR><BR>
+				
+						</BODY>
+
+						</HTML>
+
+
+
+				

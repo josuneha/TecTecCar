@@ -1,0 +1,60 @@
+<HTML>
+   <head>
+        <title>Log in </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Tec Tec Car</title>
+    <link rel="stylesheet" type="text/css" href="reset3.css">
+    <link rel="stylesheet" type="text/css" href="main3.css">
+  <script>
+  $(function() {
+    var availableTags = [
+      "asier",
+      "fermin",
+      "ana",
+      "ander",
+      "maialen",
+      "eneritz",
+      "itziar",
+      "jose",
+      "laida",
+      "cristina",
+      "iñigo",
+      "aitor",
+      "paul",
+      "telmo",
+      "telma",
+      "paola",
+      "paula",
+      "luis",
+      "diego",
+      "carlos",
+      "joseba",
+      "borja"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+    </head>
+
+    <body TEXT="black">
+	<div id="main_content">
+	<div id="form_wrapper" class="form_wrapper">
+        <form method="GET" name="formclave" action="ComprobarContrasena">
+ </div>
+	
+  <font size="4" color="black">First name:<input id="tags" type="text" size="15" name="nombre" id="txt1" onkeyup="showHint(this.value)">
+
+  <td><font size="4" color="black" face="Arial"> Password</font></td>
+  <td align="left"><input type="password" name="Contrasena" size="15"/></td>
+            </div>    
+           
+                    <td colspan="2"><INPUT TYPE="submit" value="Log in"></td>
+
+	
+        </form> 
+
+    </body>
+
+</HTML>

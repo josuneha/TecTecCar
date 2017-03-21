@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html >
+			<head>
+	
+			
+			
+			<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+			<SCRIPT type="text/javascript" src="EventoTecnun.js"></SCRIPT>
+			<SCRIPT type="text/javascript" src="EventoWayHome.js"></SCRIPT>
+			<SCRIPT type="text/javascript" src="ValidacionDatos.js"></SCRIPT>
+			<SCRIPT type="text/javascript" src="AdvancedSearch.js"></SCRIPT>
+			
+				<style>
+				  #map {
+					width: 350px;
+					height: 200px;
+				  }
+				</style>
+				
+				
+				<body BACKGROUND= http://dailydesigninspiration.com/diverse/gd/janfolgmann/muscle_car_vector_by_depot_hdm.jpg >
+				
+				<BR><BR>
+				<FORM ACTION=Function1_2 METHOD=GET  f> 
+				<TABLE width="40%" ALIGN=center  >
+				<TD  face=arial ALIGN=Center bgcolor=White > <b></b>
+				<BR>
+				<BR>
+				
+				<H2 ALIGN=center> <FONT face=arial COLOR=black> SELECT YOUR CHOICE</FONT></H2>
+				
+			
+				<INPUT TYPE=radio NAME=disp1 VALUE=1 id=buttonTecnun onclick="functionTecnun()"  > <font face=arial> To Tecnun
+				<INPUT TYPE=radio NAME=disp1 VALUE=2 id=buttonHome onclick="functionHome ()" > <font face=arial> Way Home<BR>
+
+					<BR><BR>
+					<ALIGN=center> <i face=arial COLOR=black> <font face=arial> Search here your destination/departure</i>
+					<BR><BR>
+					<div id="map"></div>
+					
+					<script>
+					  function initMap() {
+						var mapDiv = document.getElementById('map');
+						var map = new google.maps.Map(mapDiv, {
+						  center: {lat: 43.310, lng: -1.988},
+						  zoom: 13
+						});
+					  }
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+				<p>
+				
+				
+
+				
+				<TABLE>
+								
+
+							<tr>
+							<td>
+							<p face=arial ALIGN=center bgcolor=white > <b>  <font face=arial> Departure (*) <br><select id="departure"> 
+					
+									  <option value="volvo" selected=selected>Antiguo</option>
+									  <option value="saab">BentaBerri</option>
+									  <option value="opel">>Centro</option>
+									  <option value="audi">Intxaurrondo</option>
+									  <option value="TECNUN">TECNUN</option>
+							
+								</select>
+								</td>
+								&nbsp&nbsp&nbsp 
+							<td></td>
+							<td> 
+							<p face=arial ALIGN=center bgcolor=white > <b> <font face=arial> Destination (*) <br> <select id="destination">
+					
+									  <option value="volvo" selected=selected>Antiguo</option>
+									  <option value="saab">BentaBerri</option>
+									  <option value="opel">>Centro</option>
+									  <option value="audi">Intxaurrondo</option>
+									  <option value="TECNUN">TECNUN</option>
+									
+								</select>
+								</td>
+								</tr>
+							</TABLE>
+				
+				
+
+ 
+				<TABLE>
+				
+				<p face=arial ALIGN=center bgcolor=white > <b> <font face=arial> Date (*) &nbsp&nbsp&nbsp<input type="date" name="cumpleanios" step="1" min="2016-01-01" max="2016-12-31" value="<?php echo date("Y-m-d");?> 
+				
+				<p><p face=arial ALIGN=center bgcolor=white id="demo"> <b> <font face=arial> Arriving Time (*) </b> <br> 
+				<BR><INPUT TYPE=time NAME=DepTime  SIZE=20</TD>
+				
+				
+	
+				</TABLE><BR>
+				
+		
+					<br>
+					 <input type="checkbox" onclick="disableElements()" id="busqueda" > </input> <font face=arial	style="font-weight: normal;" > Click here for more search information: <br>
+					<br>
+					<br>  Price <select id=pricefrom disabled=True >
+									
+									<option value="de" >From</option>
+									<option value="1" >1</option>
+									<option value="2">2</option>
+
+								</select>
+								&nbsp&nbsp&nbsp  <select id="priceto"disabled=True >
+									
+									<option value="de" >To</option>
+									<option value="1" >1</option>
+									<option value="2">2</option>
+
+								</select>		<br>
+
+					<br> Do you smoke? <select id="smoke" disabled=True >
+							<option value="y" selected=selected>Yes</option>
+							<option value="n">No</option>
+							</select> <br>
+					<br> Pets?  <select id="pets" disabled=true>
+					
+							<option value="yes" selected=selected>Yes</option>
+							<option value="no">No</option>
+							</select> <br>
+							
+					<br> <input type="checkbox" id="accept" disabled=true onclick="disableDriver()"> Specific driver: <input type="text" id="driver" disabled=true ><br>
+				  </fieldset>
+				</form>
+				
+		
+				<br>
+				
+				<P><B> (*) Mandatory fields  </B><BR>
+				<H2 ALIGN=center><INPUT TYPE=button Value=Search onClick="validate()">
+				</H2>
+                </BODY>
+                </html>

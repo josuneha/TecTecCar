@@ -1,0 +1,234 @@
+<!DOCTYPE html">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home· TecTecCar</title>
+    <link rel="stylesheet" type="text/css" href="reset3.css" />
+    <link rel="stylesheet" type="text/css" href="main3.css" />
+		<style>
+		.dropbtn {
+		background-color: grey
+		color: white; 
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		}
+
+		.dropbtn:hover, .dropbtn:focus {
+		background-color: "grey";
+		}
+
+		.dropdown {
+		position: relative;
+		background-color: "grey";
+		display: inline-block;
+		}
+
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		overflow: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		.dropdown-content a {
+
+		padding: 12px 16px;
+		text-decoration: none;
+		background-color: "grey";
+		display: block;
+		}
+
+		.dropdown-content a:hover {background-color: grey}
+
+		.show {display:block;}
+		background-color: grey
+	</style>
+</head>
+<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/tms-0.4.x.js"></script>
+    <script src="js/jquery.jqtransform.js"></script>
+	<meta charset="utf-8">
+		<SCRIPT type="text/javascript" src="comprobar.js"></SCRIPT>
+				
+		<style>
+		  #map {
+			width: 380px;
+			height: 250px;
+			 }
+		</style>
+	<script>
+		$(document).ready(function(){
+			$('.form-1').jqTransform();					   	
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:1000,
+				preset:'fade',
+				pagination:true,
+				pagNums:false,
+				slideshow:7000,
+				numStatus:false,
+				banners:false,
+				waitBannerAnimation:false,
+				progressBar:false
+			})		
+		});
+		</script>
+
+<body>
+    
+    <div id="header">
+        
+        <div class="container">
+        
+        <h1 ><tt> | tecteccar |</tt></h1> 
+		    
+			<div id="header_connect" class="header_info">
+			
+				 <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100011209128997" id="facebook" title="Facebook">Facebook</a></li>
+                    <li><a href="#" id="google" title="Google">Google</a></li>
+                    <li><a href=" https://www.twitter.com/tecteccar" id="twitter" title="Twitter">Twitter</a></li>
+                </ul>
+            </div> <!-- END .container -->
+			
+		<h2 ><B>FOLLOW US</B></h2>
+    
+        </div> <!-- END .container -->
+    
+    </div> <!-- END #header -->
+	
+	    <div id="header2">
+        
+        <div class="container">
+		<p>
+		<p>
+			<nav>
+            <ul>
+				
+            <li class="first_list"><a href="#" class="main_menu_first">home</a></li>
+            <li class="first_list"><a href="aboutus.html" class="main_menu_first">about us</a></li>     
+            <li class="first_list"><a href="Help" class="main_menu_first">help</a></li>
+            <li class="first_list"><a href="contact.html" class="main_menu_first">contact us</a></li>
+			<div class="dropdown">
+			<button  id="myBtn" align= "right" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#contact"><font size="2" color="black"><b>Change adress</a></font>
+			<a href="Changepassword.html"><font size="2" color="black"><b>Change password</a></font>
+			<a href="Changephonenumber.html"><font size="2"  color="black"><b>Change phone number</a></font>
+			<a href="#contact"><font size="2" color="black"><b>Delete adress</a></font>
+			<a href="#contact"><font size="2" color="black"><b>My current offers</a></font>
+			<a href="#contact"><font size="2" color="black"><b>History and votings</a></font>
+			</div>
+			</div>
+            </ul>
+			</nav>
+        </div> <!-- END #main_menu -->
+    
+        
+			<script>
+
+		document.getElementById("myBtn").onclick = function() {myFunction()};
+
+ 
+		function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+
+		window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+		}
+		}
+		}
+		}
+		</script>
+	<br>
+	<div id="slide">		
+            <div class="slider">
+                <ul class="items">
+                    <li><img src="foto1.jpg" alt="" /></li>
+                    <li><img src="foto2.jpg" alt="" /></li>
+                </ul>
+            </div>	
+	
+            <a href="#" class="prev"></a><a href="#" class="next"></a>
+<p><p><p><p><p><p><p><p><p>
+    <div id="footer">
+        
+        <div class="container">
+                 
+			
+            <div id="footer_explore" class="footer_info">
+                
+                <h4>explore</h4>
+                <ul>
+                    <li><a href="Index">home</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="Help">help</a></li>
+                </ul>
+                
+            </div> <!-- END #footer_about -->
+            
+            <div id="footer_browse" class="footer_info">
+                
+                <h4>browse</h4>
+                <ul>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="#">terms of service</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+                
+            </div> <!-- END #footer_about -->
+			
+			 <div id="footer_explore" class="footer_info">
+                
+                <h4>explore</h4>
+                <ul>
+                    <li><a href="Index">home</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="Help">help</a></li>
+                </ul>
+                
+            </div> <!-- END #footer_about -->
+
+        
+        </div> <!-- END .container -->
+        
+		</div> <!-- END #footer -->
+	
+	    <div id="footer2">
+        
+        <div class="container">
+            
+            <div id="footer_about2" class="footer_info2">
+                
+                <p><span class="bold_text">TecTecCar</span>
+                <br />
+                © TecTecCar | Tecnun - Escuela de Ingenieros | P° de Manuel Lardizabal, 13. 20018 Donostia-San Sebastian | Gipuzkoa (Spain). 
+                <br />
+                Phone | +34 943 21 98 77. Fax | +34 943 31 14 42.
+				</p>
+            </div> <!-- END #footer_about -->
+		
+		 </div> <!-- END .container -->
+		</div> <!-- END #footer -->
+	<!-- Script -->
+	
+</body>
+</html>

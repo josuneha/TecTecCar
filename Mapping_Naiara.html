@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="cabecera.css">
+
+    <title>Waypoints in a journey </title>
+    <link rel="stylesheet" type="text/css" href="mapStyle.css">
+    
+  </head>
+  <body BACKGROUND=https://wallpaperscraft.com/image/highway_cars_city_traffic_buildings_black_white_25566_1920x1080.jpg >
+  <header id="main-header">
+  <a id="logo-header" href="#">
+  <span class="site-name">Tec Tec Car</span>
+  <span class="site-desc">Save the environment - Meet new people - Get lifted </span>
+  </a> <!-- / #logo-header -->
+	 
+  <nav>
+  <ul>
+  <li><a href="Menu">Home</a></li>
+  <li><a href="http://www.tecnun.es">Tecnun - UNAV</a></li>
+  <li><a href="#">About us</a></li>
+  </ul>
+  </nav><!-- / nav -->
+  </header><!-- / #main-header -->
+
+  <div id="map"></div>
+    <div id="right-panel">
+    <div>
+	<form action="insertMap" method="GET" name="mapa" id="mapa">
+    <b>Name of the map:</b>
+    <input id="nameMap" name="nameMap" class="styled-select" >
+    <b>Start:</b>
+    <select id="start" name="start" class="styled-select">
+      <option type="text" value="43.305056, -2.009327">Tecnun</option>
+      <option type="text" value="43.305344, -1.973516">Amara</option>
+      <option type="text" value="43.318078, -1.983037">City center</option>
+      <option type="text" value="43.321810, -1.973502">Gros</option>
+    </select>
+    <br>
+    <b>Waypoints:</b> <br>
+    <i>(Select a single waypoint)</i> <br>
+    <select multiple id="waypoints" name="waypoints">
+      <option type="text" value="43.318023, -1.985208">Londres Hotel</option>
+      <option type="text" value="43.321541, -1.981018">Maria Cristina Hotel</option>
+    </select>
+    <br>
+    <b>End:</b>
+    <select id="end" name="end" class="styled-select">
+      <option type="text" value="43.305056, -2.009327">Tecnun</option>
+      <option type="text" value="43.305344, -1.973516">Amara</option>
+      <option type="text" value="43.318078, -1.983037">City center</option>
+      <option type="text" value="43.321810, -1.973502">Gros</option>
+    </select>
+    <br>
+      <br><button class="styled-button-2" type="button"  onClick="comprobarCampos()"  > Send Information</button>
+	  </form>
+	  <br><input class="styled-button-2" type="submit" id="paint" value="Paint">
+	  <br><br><a class="styled-button-2" href="index.html">Go to menu</a><br>
+    </div>
+    <div id="directions-panel"></div>
+    </div>
+
+    <script type="text/javascript" src="javascriptNaiara.js" ></script> 
+	
+    <script src="https://maps.googleapis.com/maps/api/js?&signed_in=true&callback=initMap" async defer></script>
+        
+    <!--<footer id="main-footer">
+	//<p>&copy; 2016 <a href="#">Software Engineering - Tec Tec Car Application</a></p>
+	//</footer> <!-- / #main-footer -->
+
+    
+  </body>
+</html>
+

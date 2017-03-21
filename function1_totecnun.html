@@ -1,0 +1,351 @@
+<html>
+	<head>			 				
+	<title>  Function1</title>
+					
+			</head>
+			<body BACKGROUND=http://www.colvema.org/revista/Colvema83/files/gris_claro.jpg >
+				<meta charset="utf-8">
+				<SCRIPT type="text/javascript" src="comprobar.js"></SCRIPT>
+				
+			
+				<style>
+				  #map {
+					width: 500px;
+					height: 300px;
+				  }
+				</style>
+				<link rel="stylesheet" type="text/css" href="style1.css">
+				<link rel="stylesheet" type="text/css" href="reset3.css" />
+				<link rel="stylesheet" type="text/css" href="main3.css" />
+				<link rel="stylesheet" type="text/css" href="styles.css" />
+				</head>
+				<body>
+				<div id="header">
+        
+        <div class="containers">
+        	
+        <h1 ><tt> | tecteccar |</tt></h1> 
+		
+		<h3 ><tt> Save the environment - Meet new people - Get lifted</tt></h3> 		
+		   <p><p><p>
+			<div class="social-icons">	
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.facebook.com/profile.php?id=100011209128997" id="facebook" title="Facebook"><img src="facebook.png" ></a>
+				&nbsp;&nbsp;&nbsp;
+				<a href=" https://www.twitter.com/tecteccar" id="twitter" title="Twitter"></li><img src="twitter.png" ></a>
+				&nbsp;&nbsp;&nbsp;
+				<a href=" #" id="google" title="Google"></li><img src="google.png" ></a></p>
+			</ul>
+			
+		</div>
+	
+        </div> 
+	<div id='cssmenu'>
+			
+		<ul>
+		 <li><a href='Menu'>Home</a></li>
+		   <li><a href='about_us.html'>About Us</a></li>
+
+		   <li class='active'><a href='Menu'>Menu</a>
+
+			  <ul>
+				 <li><a href='#'>My Account</a>
+					<ul>
+					   <li><a href='Modifydata1'>Modify my data</a></li>
+					   <li><a href='#'>My weekly agenda</a>
+					   <ul>
+					   <li><a href="Calendario">Select a week</a></li>
+					   <li><a href="BookingWarnings">New warnings</a></li>
+					   <li><a href="AllJourneys">All warnings</a></li>
+				  </ul>
+				  </li>
+					   <li><a href='Deletehtml'>Delete account</a></li>
+					   <li><a href='favoritos'>Favorites</a></li>
+					   <li><a href='logout'>Log out</a></li>
+					   
+					</ul>
+				 </li>
+				 <li><a href='#'>Insert a journey</a>
+					<ul>
+					   <li><a href="function1_totecnun.html">To Tecnun</a></li>
+					   <li><a href="function1_gohome.html">Way back home</a></li>
+					</ul>
+				 </li>
+				 <li><a href='Search_Ride.html'>Book a journey</a>
+		
+				 </li>
+				 
+				 
+				 		 <li><a href='#'>Leave an opinion about a driver</a>
+					<ul>
+					   <li><a href="Function3_Valoracion.html">Insert a comment</a></li>
+					   <li><a href="userList">List of drivers</a></li>
+					</ul>
+				 </li>
+				 
+
+		 <li><a href='#'>Messages</a>
+					<ul>
+					 <li><a href='BandejaDeEntrada'>Inbox messages</a></li>
+					   <li><a href='Sent_Messages'>Sent messages</a></li>
+					</ul>
+				 </li>
+				 </li>
+			  </ul>
+		   </li>
+		   
+		     <li><a href='#'>Reward</a>
+					<ul>
+					   <li><a href="startgame.html">Play the TecTecCarGame!</a></li>
+					   
+					</ul>
+				 </li>
+				 </li>
+
+
+			  </ul>
+
+		    </li>
+
+			</ul>
+		</div>
+		
+    <p><p><p><p><p><p>
+    
+		
+		
+	</div>
+				<BR><BR>
+				<div class="container">
+				<section id="content">
+				<FORM ACTION=ShowJourney METHOD=GET >
+				<TABLE ALIGN=center>
+				<TD face=arial ALIGN=Center bgcolor=White> <b></b>
+				<BR><BR>
+				<font size="20" color="E88521"><b>Insert your journey</b></font>
+				<h1></h1>
+				<BR></BR>
+				<FONT size=+1><B>Remember that you can insert up to one journey back home per day. </B></FONT
+				<BR>
+				<BR>
+				<BR>
+				<TABLE>
+					<BR><BR>
+					<div id="map"></div>
+					<script type="text/javascript" src="javascriptNaiara.js" ></script> 
+					<script src="https://maps.googleapis.com/maps/api/js?&signed_in=true&callback=initMap" async defer></script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+				<p>
+				</TABLE>
+				<TABLE>
+				<p><p>							
+				<div align="center">
+				<p><p><br><p> 
+                <b>Start:</b>
+				<select id="start" name="start" class="styled-select">
+				  <option type="text" value="43.305056, -2.009327">Tecnun</option>
+				  <option type="text" value="43.305344, -1.973516">Amara</option>
+				  <option type="text" value="43.321810, -1.973502">Gros</option>
+				  <option type="text" value="43.318078, -1.983037">City center</option>
+				  <option type="text" value="43.309246, -1.991519">Ayete</option>
+				  <option type="text" value="43.313697, -1.956211">Intxaurrondo</option>
+				  <option type="text" value="43.317231, -1.967908">Egia</option>
+				  
+				</select> 
+				
+				<TABLE>
+				<p> 
+                <b>Waypoints:</b> <br>
+				<i>(Select a single waypoint)</i> <br>
+				<select multiple id="waypoints" name="waypoints" >
+				  <option type="text" value="43.312804, -2.005569">Super Amara - Avda Tolosa</option>
+				  <option type="text" value="43.314501, -2.000519">Ondarreta - San Sebastian church</option>
+				  <option type="text" value="43.308158, -2.010301">Aulario</option>
+				  <option type="text" value="43.305293, -1.973524">Arco</option>
+				  <option type="text" value="43.308196, -1.980040">Astoria</option>
+				  <option type="text" value="43.302678, -1.975179">Venta del Curro</option>
+				  <option type="text" value="43.322751, -1.977056">Foster's Hollywood</option>
+				  <option type="text" value="43.325978, -1.970718">Larramendi Petrol Station</option>
+				  <option type="text" value="43.323867, -1.975123">Azoka - Plaza Catalu&ntilde;a</option>
+				  <option type="text" value="43.323125, -1.965359">Jesuitas School</option>
+				  <option type="text" value="43.317426, -1.982016">Buen Pastor</option>
+				  <option type="text" value="43.320401, -1.980232">Avd Libertad with Okendo</option>
+				  <option type="text" value="43.313937, -1.985208">Bellas Artes</option>
+				  <option type="text" value="43.318023, -1.985208">Londres Hotel</option>
+				  <option type="text" value="43.315249, -1.988494">La Perla</option>
+				  <option type="text" value="43.318023, -1.985208">Londres Hotel</option>
+				  <option type="text" value="43.321541, -1.981018">Maria Cristina Hotel</option>
+				</select>             
+				</p> 				
+				</div>
+												
+				<p>
+				</TABLE>
+				
+				<TABLE>
+				<br><p> 
+                <b>End:</b>
+				<select id="end" name="end" class="styled-select">
+				  <option type="text" value="43.305056, -2.009327">Tecnun</option>
+				  <option type="text" value="43.305344, -1.973516">Amara</option>
+				  <option type="text" value="43.321810, -1.973502">Gros</option>
+				  <option type="text" value="43.318078, -1.983037">City center</option>
+				  <option type="text" value="43.309246, -1.991519">Ayete</option>
+				  <option type="text" value="43.313697, -1.956211">Intxaurrondo</option>
+				  <option type="text" value="43.317231, -1.967908">Egia</option>
+				</select>            
+				</p> 				
+				</div>
+				<div id="directions-panel"></div>
+				</div>
+												
+				<p>
+				</TABLE>
+				<TABLE>
+				<p><input class="btn" type="button" id="paint" value="Paint">
+				<p>
+				</TABLE>
+				<TABLE>
+				<p><p>							
+				<div align="center">
+				<p><p><br><p> 
+                <TD face=arial ALIGN=center bgcolor=white> <b> Select a departure area  </b><select class="styled-select" id='select1' name='area' onchange='cargarSelect2(this.value);'> 
+                       <option value='0'>Select a departure area</option> 
+                    <option value='1'>Antiguo</option> 
+                    <option value='2'>Amara</option> 
+                    <option value='3'>Gros</option> 
+					<option value='4'>Centro</option>
+					<option value='5'>Ayete</option>
+					<option value='6'>Intxaurrondo</option>
+					<option value='7'>Egia</option>
+                </select> 
+				
+				<TABLE>
+				<p> 
+                <TD face=arial ALIGN=center bgcolor=white> <b> Select a meeting point </b> <select class="styled-select" id='select2' name='calle' onchange='seleccinado_select2();' disabled> 
+                <option value='0'>Select a meeting point</option> 
+                </select> 
+				</p> 				
+				</div>
+												
+				<p>
+				</TABLE>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white> <b> Date  </b><INPUT class="styled-select" TYPE=date NAME=Date SIZE=20</TD>
+				<p>
+				</TABLE>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white> <b> Departure time  </b><INPUT class="styled-select" TYPE=time NAME=DepTime SIZE=20</TD>
+				<p>
+				</TABLE>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white> <b> Estimated arrival time  </b><INPUT class="styled-select" TYPE=time NAME=ArivTime SIZE=20</TD>
+				<p>
+				</TABLE>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white>  <b> Price per person </b><INPUT class="styled-select" TYPE=text NAME=Price SIZE=20</TD>
+				<p>
+				</TABLE>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white>  <b> Number of free seats </b><SELECT class="styled-select" NAME=FreeSeats>
+									<OPTION NAME=FreeSeats VALUE=1>1</OPTION>
+									<OPTION NAME=FreeSeats VALUE=2>2</OPTION>
+									<OPTION NAME=FreeSeats VALUE=3>3</OPTION>
+									<OPTION NAME=FreeSeats VALUE=4>4</OPTION>
+									<OPTION NAME=FreeSeats VALUE=5>5</OPTION>
+									<OPTION NAME=FreeSeats VALUE=6>6</OPTION>
+
+				</TABLE>
+				</SELECT>
+				<p>
+				<TABLE>
+				<TD face=arial ALIGN=center bgcolor=white>  <b> Do you smoke? </b><SELECT class="styled-select" NAME=Smoke>
+									<OPTION NAME=FreeSeats VALUE=No>No</OPTION>
+									<OPTION NAME=FreeSeats VALUE=Yes>Yes</OPTION>
+				</TABLE>
+				</SELECT>
+				<input type=hidden name=dest value=Home>
+				<p>
+								
+				<BR><BR>
+				<P><B>All fields must be filled out before saving the trayectory which has been introduced </B><BR>
+				<BR><BR>
+				
+				<H4 ALIGN=center>
+				<input class="btn" type="button" value="Click here to save your journey" onClick="validate()">
+				</H4>
+				<BR><BR><BR>
+			
+				</TABLE>
+				</TABLE><BR>
+				</TABLE>				
+				<p><p><p>
+				
+				</FORM>
+				</section>
+				</div>
+				<br><br>
+				<div id="footer">
+        
+        <div class="containers">
+                 
+			
+            <div id="footer_explore" class="footer_info">
+                
+                <h4>explore</h4>
+                <ul>
+                    <li><a href="Menu">home</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="Help">help</a></li>
+                </ul>
+                
+            </div> 
+            
+            <div id="footer_browse" class="footer_info">
+                
+                <h4>browse</h4>
+                <ul>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="#">terms of service</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+                
+            </div> 
+			
+			 <div id="footer_explore" class="footer_info">
+                
+                <h4>explore</h4>
+                <ul>
+                    <li><a href="Menu">home</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="Help">help</a></li>
+                </ul>
+				
+
+        
+        </div> 
+        
+		</div> 
+		
+		<div id="footer2">
+        
+        <div class="containers">
+            
+            <div id="footer_about2" class="footer_info2">
+                
+                <p><b>TEC-TEC-CAR</b>
+                <br />
+                © TecTecCar | Tecnun - Escuela de Ingenieros | Paseo de Manuel Lardizabal, 13. 20018 Donostia-San Sebastian | Gipuzkoa (Spain). 
+                <br />
+                Phone | +34 943 21 98 77. Fax | +34 943 31 14 42.
+				</p>
+            </div> 
+		
+		 </div> 
+		</div> 
+
+	    
+		</body>
+                </BODY>
+                </html>

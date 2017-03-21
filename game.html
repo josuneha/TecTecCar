@@ -1,0 +1,85 @@
+<!--Autor Pius Ganter A904784-->
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>TheTecTecCarGame!</title>
+			
+        <link rel='stylesheet' type='text/css' href='stylesheetPius.css'/>
+		
+		<link rel="stylesheet" href="cabecera.css">
+		
+		<script src="jquery.min.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script type='text/javascript' src='scriptGame.js'></script>
+		<script type='text/javascript' src='stopwatchGame.js'></script>
+		
+	</head>
+	<body style="background:green;" onload="show();">
+	
+	<!--menue-->
+  <header  id="main-header">
+			<a id="logo-header" href=\"#\">
+			<span class="site-name">Tec Tec Car</span>
+			<span class="site-desc">Save the environment - Meet new people - Get lifted </span>
+			</a>
+ 
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://www.tecnun.es"</a> Tecnun - UNAV </li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</nav>
+ 		</header>
+	
+	
+	
+		<!-- Here are the css borders of the game-->
+            <div id="tope"></div>
+            <div id="river"></div>
+			<div id="river1"></div>
+            <div id="concha"></div>
+            <div id="island"></div>
+   
+	
+	
+					<!--all the pictures for the game -->
+					<img id= "vehicle" src="car2.jpg"/>
+					<!--<img id=  "car" src="car3.jpeg"/>-->
+					<img id= "weib" src="weib.jpg"/>
+					<img id=  "weibe" src="weib1.jpg"/>
+					<img id= "simson" src="simson.gif"/>
+					<img id=  "junge" src="junge.jpg"/>
+					<img id=  "tecnun" src="tecnun.jpg"/>
+					<!--<img id= "bridge" src="bridge.jpg"/>-->
+					<img id=  "cat" src="cat.jpg"/>
+					<img id= "lights" src="lights.jpg"/>
+
+					
+					
+							<form method ="get"  action="game" >
+							<div class="nameHighscore">
+							<input type="submit" value="Highscore"><br>
+							
+							<input type = "text" name ="playerName" value="playerName">
+							</div><input type="text" name ="time" id="time" value="time"><br>
+							</form>
+		
+	</body>
+</html>
+<!--  
+							<form method ="get"  action="game">
+							<input type="submit" class="star" value="Highscore">
+							
+							<div> <input type="text" name ="time" id="time" value="time"></div>
+							</form>
+							
+			<!-- Here is the textfield and the submit button
+							<div class="nameHighscore">
+									<BR>
+									<form action="game">
+									Name:<br>
+											<input type = "text" name ="playerName">
+											
+									</form>
+							 </div>-->
